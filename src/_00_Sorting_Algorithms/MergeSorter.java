@@ -42,8 +42,8 @@ if(low<high) {
    int k=low;
             //8. while i is less than or equal to middle
             //   and j is less than or equal to high
-   while (i>=middle && j<=high) {
-	
+   while (i<=middle && j<=high) {
+	display.updateDisplay();
       
             	//9. if temp array at i is less than or equal 
             	//   to temp array at j	
@@ -65,13 +65,13 @@ if(low<high) {
                }                
             
             //17. make a while loop that runs while i is less than or equal to middle
-            while(i<=middle)
+            while(i<=middle) {
             	//18. set array at k equal to temp array at i
                 array[k]=temp[i];
                 //19. increase k and i by 1
                k++;
                i++;
-            
+            }
 }
 	}
 

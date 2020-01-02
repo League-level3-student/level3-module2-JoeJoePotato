@@ -13,16 +13,17 @@ public class InsertionSorter extends Sorter {
 		//1. make a for loop that starts at 1 and goes through 
 		// the length of the array 
 for (int i = 1; i < array.length; i++) {
-	display.updateDisplay();	
+	
+	
 for (int j = i; j >0; j--) {
-if(array[i]<array[j]) {
+if(array[j]<array[j-1]) {
 	int noone=array[j];
 	int notwo=array[j-1];
 	 array[j]=notwo;
 	 array[j-1]=noone;
 		
 }
-
+display.updateDisplay();
 }
 			//2. make another for loop that starts at i and counts down
         	//   while j is greater than 0
