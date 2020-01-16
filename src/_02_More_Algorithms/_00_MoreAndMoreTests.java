@@ -15,11 +15,9 @@ public class _00_MoreAndMoreTests {
 	}
 
 	public Boolean isPrime(int item) {
-		for (int i = 1; i < 25; i++) {
-			if (i<item && isPrime(i)==false) {
-				if (item % i == 0) {
-					return false;
-				}
+		for (int i = 2; i <= Math.sqrt(item); i++) {
+			if (item % i == 0) {
+				return false;
 			}
 		}
 		return true;
